@@ -1,38 +1,143 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+/* body{
+  border: 2px solid red;
+} */
+
+
+
+.header {
+  height: 25vh;
+  background-image: url(../public/img/header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: 50%;
+ 
+}
+
+.container-aside {
+  padding-top: 1rem;
+  display: flex;
+  height: 10rem;
+}
+
+aside {
+  margin-right: 1rem;
+  width: 20%;
+}
+
+footer {
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  background-color: #141616;
+  z-index: 0;
+  color: #FFFFFF !important;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img{
+  max-width: 320px;
+  max-height: 480px;
+  object-fit: contain;
+  margin-top: 1.5rem;
+}
+strong{
+  color: #dc3545;
+  font-size: x-large;
+
+}
+.text-decoration-none{
+  color:#515151;
+
+}
+.App{
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.images-hover{
+  position: relative;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.images-hover img{
+
+  object-fit: contain;
+}
+
+.images-hover .over{
+  position: absolute;
+  transition: .6s;
+  opacity: 0;
+}
+
+.images-hover .over:hover{
+  opacity: 1;
+}
+
+/* .products-list li {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
-.App-link {
-  color: #61dafb;
+.products-list li img {
+  width: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.products-list p {
+margin-top: 50px;
+} */
+
+.news-detail img {
+  max-height: 400px;
+  object-fit: contain;
 }
+
+.search {
+  position: relative;
+  box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+  margin-top: 3rem;
+}
+
+.search input {
+  height: 60px;
+  text-indent: 25px;
+  border: 2px solid #d6d4d4
+}
+
+.search input:focus {
+  box-shadow: none;
+  border: 2px solid #dc3545
+}
+
+/* .search .fa-search {
+  position: absolute;
+  top: 20px;
+  left: 16px
+} */
+
+.search button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 50px;
+  width: 110px;
+
+}
+
+
+
+
+

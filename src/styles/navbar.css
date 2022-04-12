@@ -1,0 +1,25 @@
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 0.5rem;
+    padding-bottom: 00.5rem;
+    z-index: 1;
+  }
+  
+  .login {
+    position: absolute;
+    padding: 20px;
+    margin-top: 4.5rem;
+    background: #fff;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+    transform: scale(0);
+    transition: 0.6s;
+    transform-origin: top;
+  }
+  
+  .login.open {
+    transform: scale(1);
+  }
